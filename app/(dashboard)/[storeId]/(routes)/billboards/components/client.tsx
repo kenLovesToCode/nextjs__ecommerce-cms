@@ -13,7 +13,7 @@ interface BillboardClientProps {
   data: BillboardColumn[];
 }
 
-const BillboardClient: React.FC<BillboardClientProps> = ({ data }) => {
+export const BillboardClient: React.FC<BillboardClientProps> = ({ data }) => {
   const router = useRouter();
   const params = useParams();
 
@@ -39,5 +39,3 @@ const BillboardClient: React.FC<BillboardClientProps> = ({ data }) => {
     </>
   );
 };
-
-export default BillboardClient;
