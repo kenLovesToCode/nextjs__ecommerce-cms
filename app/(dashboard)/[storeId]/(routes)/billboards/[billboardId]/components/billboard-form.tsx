@@ -51,7 +51,7 @@ const BillboardForm: React.FC<BillboardFormProps> = ({ initialData }) => {
 
   const title = initialData ? "Edit Billboard" : "New Billboard";
   const description = initialData
-    ? "Ediat billboard details"
+    ? "Edit billboard details"
     : "Add a new billboard";
   const toastMessage = initialData
     ? "Billboard updated."
