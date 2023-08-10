@@ -20,7 +20,6 @@ import AlertModal from "@/components/modals/alert-modal";
 interface CellActionProps {
   data: ProductColumn;
 }
-
 export const CellAction: React.FC<CellActionProps> = ({ data }) => {
   const router = useRouter();
   const params = useParams();
