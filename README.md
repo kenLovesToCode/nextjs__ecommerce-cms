@@ -1,6 +1,9 @@
 # Next.js 13.4 | Clerk | ShadcnUI | Tailwind | Prisma
 
 ```sh
+# create app
+$ npx create-next-app@latest nextjs_ecommerce-cms --typescript -tailwind --eslint
+
 # install prisma
 # initialize prisma
 $ npx prisma init
