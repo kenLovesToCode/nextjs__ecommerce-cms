@@ -20,6 +20,16 @@ $ npx prisma db push
 $ npx prisma migrate reset
 #re-generate and push again after reset
 
+# Stripe payment test
+$ stripe login # open cmd with the admin project path
+# and copy the key
+
+$ stripe listen --forward-to localhost:3001/api/webhook
+
+#open separate cmd
+$ stripe trigger payment_intent.succeeded
+#use test card number by country
+
 ```
 
 ##### Websites used
